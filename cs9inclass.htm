@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div#form {
+    width: 64%; background-color: silver; border: 2px solid lime; font-family: Arial, Helvetica, sans-serif;
+    font-size: large; margin: 10px auto; padding-left: 28px; padding-bottom: 10px; padding-top: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <h1> CS-9 In Class Form</h1>
+    <div id="form">
+    <form method="POST" action=""></form>
+    <p>
+        Please Enter Your Name: &nbsp; &nbsp;
+        <input type="text" name="myname" placeholder="Enter Name Here" size="20" maxlenght="40"/>
+    </p>
+    <p>
+        Please Enter Your Class: &nbsp; &nbsp;
+        <select name="myclass"> 
+            <option value="Empty"> Please Select A Class</option>
+            <option value="FP"> FreshPerson</option>
+            <option value="SO"> Sophmore</option>
+            <option value="JU"> Junior</option>
+            <option value="SN"> Senior</option>
+        </select>
+    </p>
+    <p>
+        Please Enter Your Grade: &nbsp; &nbsp;
+            <input type="radio" name="mygrade" value="A"/> A grade
+            <input type="radio" name="mygrade" value="B"/> B grade
+            <input type="radio" name="mygrade" value="C"/> C grade
+    </p>
+    <p>
+        Please Select the magazines that you read <br/>
+        <input type="checkbox" name="mymags" value="WSG"/> Wall Street Journal <br/>
+        <input type="checkbox" name="mymags" value="BG"/> Boston Globe <br/>
+        <input type="checkbox" name="mymags" value="NYT"/> NewYork Times <br/>
+    </p>
+    <p>
+        Please enter any sugesstions for the course: <br/>
+        <textarea name="mysuggs" rows="5" cols="40" placeholder="Type Here"> </textarea>
+    </p>
+    <p>
+        <input type="submit" name="Submit" value="I am Done"/> &nbsp; &nbsp;
+        <input type="Reset" name="Reset" value="I am Wrong"/>
+    </p>
+
+</form>
+</div>
+</body>
+</html>
