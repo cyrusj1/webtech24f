@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	    <title>Quiz 2</title> <!-- No credit if you do, -1 if you do not -->
+        <style type="text/css">
+
+
+         div#t1 {color: yellow; font-family: Arial, Helvetica, sans-serif; text-align: center;}
+       
+        body{background-color: white; }
+        form {background-color: grey; color: navy; font-family: Arial, Helvetica, sans-serif; padding-left: 200px; padding-right: 300px; padding-top: 50px; padding-bottom: 50px; text-align: center;}
+        .name {color: orange;}
+        
+       
+
+    
+        
+        h2 {
+            text-align: center;
+        }
+        
+        input[type="submit"], input[type="reset"] {
+            margin-left: auto;
+            margin-top: auto;
+            
+        }
+    
+        </style>
+    
+    </head>
+
+    <body>
+        
+	    <!-- Your HTML goes here -->
+       
+        <!-- DONE The title, About Instagram must use h1 tag -->
+         <div id="t1">
+         <h1>About Instagram</h1>
+        </div>
+        <!-- DONE It uses Arial font, yellow color. (1) -->
+        <!-- CHECK It must have the image insta.jpg as the background. (2)-->
+        <!-- CHECK There must be a 200px (white) space to the left and right of the title(1)-->
+            
+        <!-- Below the title, construct the form described below (6)--> 
+
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    </br>
+            <label>Do you like Instagram?:</label>
+            <div class="radio-group">
+                <input type="radio" id="Yes" name="level" value="Yes">
+                <label for="Yes">Yes</label>
+                <input type="radio" id="No" name="level" value="No">
+                <label for="No">No</label> </div>
+
+                <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+        <!-- 1. DONE The form has a text box to capture your name - size is 20 -->
+        <!-- 2.  DONE The form has a radio button to capture whether you like -->
+        <!--    Instagram. Yes and No options. -->
+        <!-- 3. CHECK The form has a dropdown to see how many times a day you access -->
+        <!--    Instagram. The three values are 100, 50, and 25. -->
+        <!-- 4. DONE  The form has a Submit Data and a Clear Data button to submit -->
+        <!--    and reset the form data respectively. -->
+        <!--    The form has a silver background, navy font, arial. (2)-->
+        <!-- 5. The words "Your Name" and "How many times you access Instagram"
+                must be in orangered color font. (1)-->
+        <!--    The form has a 300px white space to the right and left.(1)-->
+        <!--    The form has a 100px silver space to the left. (1)-->
+        <!--    The form has a 50px silver space to the top and bottom. (2)-->
+            
+        <!-- For the last 7 points do the following: -->
+        <!-- Create a nested list using the data given.-->
+        <!-- The outer list must be unordered -(1)-->
+        <!-- It must use the image star.gif as the bullet. (2)-->
+        <!-- The inner list must be ordered with small greek numbering.(2)-->
+        <!-- This h1, which I have already tagged, must not have any background or color. -->
+        <!-- No styles needed. In other words, don't touch it. -->
+
+        <h1> Courses offered in Babson (7 points) </h1>
+
+                <ol>
+                    <p> management Courses </p>
+                        <ul style="list-style-type: lower-greek;">
+                            <li>FME</li>
+                            <li>SME</li>
+                        </ul>
+                    </li>
+                    <p> Liberal Arts Courses</p>
+                        <ul style="list-style-type: lower-greek;">
+                            <li>FCI</li>
+                            <li>Critical Race</li>
+                        </ul>
+                
+                </ol>
+
+    
+    </body>
+</html>
