@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title></title>
+
+	<style>
+	/* Your styles go here */
+	
+	.t1 {text-align: center; color: navy;}
+	 div#banner {background-image:url(tunasschool1.jpg); padding: 4%; }
+ h1#heading {color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-align: center;}
+    /* start of the meny styles */
+ .topnav {
+            background-color: blue;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .topnav a {
+            float: left;
+            color: grey;
+            text-align: center;
+            padding: 14px 40px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .active {
+            background-color: navy;
+            color: blue;
+        }
+
+       
+       
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropdownbutton {
+            font-size: 1em;
+            border: none;
+            outline: none;
+            color: grey;
+            padding: 14px 40px;
+            font-family: inherit;
+            background-color: inherit;
+            margin: 0;
+        }
+
+        .dropdowncontent {
+            position: absolute;
+            display: none;
+            background-color: blue;
+            z-index: 1;
+        }
+
+
+
+        .dropdown:hover .dropdowncontent {
+            display: block;
+        }
+
+        .dropdowncontent a {
+            float: none;
+            display: block;
+            color: gray;
+            padding: 12px 16px;
+            text-decoration: none;
+            text-align: left;
+            font-size: .75em;
+        }
+
+       
+       
+        .topnav a:hover, .dropdown:hover .dropdownbutton {
+            background-color: gray;
+            color: black;
+        }
+
+        .dropdowncontent a:hover {
+            background-color: lightgray;
+            color: black;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+        .row {display: flex; flex-direction: row;}
+        .about {width: 27%; margin: 3%; text-align: justify;}
+        @media screen and (max-width: 750px) {
+
+        .topnav a:not(:first-child),
+        .dropdown .dropdownbutton {
+        display: none;
+        }
+
+        .topnav a.icon {
+        float: right;
+        display: block;
+        }
+        }
+
+        @media screen and (max-width: 750px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .topnav.responsive .dropdown {
+                float: none;
+            }
+
+            .topnav.responsive .dropdowncontent {
+                position: relative;
+            }
+
+            .topnav.responsive .dropdown .dropdownbutton {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width:750px)
+                {
+                    .row{flex-direction:column;}
+                    .about{width:80%; margin-right:auto; margin-left:auto;}
+                }
+	
+	</style>
+	
+	
+	
+	
+	
+  </head>
+
+  <body>
+	<!-- Your HTML goes here -->
+	<div id="banner">
+        <h1 id="heading"> Giant Bluefin Tuna</h1>
+    </div>
+	
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="Migration.htm">Migration</a>
+        <a href="BodyParts.htm">Body Parts</a>
+
+        <div class="dropdown">
+          <button class="dropdownbutton">Fishing Styles</button>
+             <div class="dropdowncontent">
+                <a href="RodReal.htm">Rod and Reel</a>
+                <a href="Harpoon.htm">Harpoon</a>
+             </div>
+                </div>
+
+             <div class="dropdown">
+                <button class="dropdownbutton">Regulations</button>
+                   <div class="dropdowncontent">
+                      <a href="Commercial.htm">Commercial and Headboat</a>
+                      <a href="Recreational.htm">Recreational</a>
+                      
+      
+                   </div>
+                   </div>
+                   <div class="dropdown">
+                    <button class="dropdownbutton">About Me</button>
+                       <div class="dropdowncontent">
+                          <a href="aboutme.htm">About Me</a>
+                          <a href="contact.htm">Contact</a>
+                          
+          
+                       </div>
+                       </div>
+                   
+                   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+
+		<h1>
+            Harpoon Tuna Fishing
+        </h1>
+	<p>
+        Harpooning for Tuna also called stick boat is a commercial only way to catch them. Less common than rod a reel Harpoon in the capecod area.
+Harpoon boats often use a plane in the sky to get cordinated on where the tuna are swimming close to the surface. When they have these cordinate they storm over and throw a harpoon from the front of the boat.
+After they hit the fish a strong eletric current is sent through a wire into the harpoon killing the fish instantly. This helps keep the meat tasting better as it doesnt overheat in a fight. The downside
+to harpoon boats as the water has to be extremely calm to be able to see a fish from a far distance.
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0a36He98cxc?si=Tdalm2QvAG5HrkZa&amp;start=70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+  </body>
+</html>
