@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <title>Homework 3 - processing forms</title>
+    <style>
+      form {background-color:silver; font-family:Arial; color:Navy;
+      padding-left:50px; padding-top:20px; padding-bottom:20px;
+      margin-right:auto; margin-left:auto; width:60%;}
+      .but {width:200px; height:60px; background-color:magenta; color:black;}
+      p#desc {margin:50px 200px; font-family:cursive; }
+      h3 {font-family:lucida handwriting; font-size:3em; text-align:center;}
+    </style>
+    <script>
+      function calculateAmount() {
+        const product = document.querySelector('input[name="product"]').value.trim().toLowerCase();
+        const quantity = document.querySelector('input[name="quantity"]').value.trim();
+        const amountDueField = document.querySelector('input[name="AmtDue"]');
+        
+        const prices = {
+          milk: 3.50,
+          apple: 0.99,
+          fish: 5.99
+        };
+        
+        if (!product || !prices.hasOwnProperty(product)) {
+          alert("Please enter a valid product: Milk, Apple, or Fish.");
+          return;
+        }
+        
+        if (!quantity || isNaN(quantity)) {
+          alert("Please enter a valid numeric quantity.");
+          return;
+        }
+        
+        const amountDue = prices[product] * parseFloat(quantity);
+        amountDueField.value = `$${amountDue.toFixed(2)}`;
+      }
+    </script>
+  </head>
+  <body>
+    <h3> Homework 3</h3>
+    <p id="desc">
+      The form given below has 3 fields. Let us assume that the user will type in
+      the name of one of 3 products: Milk, Apple, or Fish. The user may enter these 
+      using any mix of cases, so be aware. You need to check to ensure that the user
+      enters a value. If it is not one of these 3, let the user know. 
+      Then the user will enter a quantity. You need to check to ensure that a quantity is entered 
+      (you may assume that 0 is a valid quality) and that the value is numeric. 
+      Once validated, use the following costs - 1 bottle of milk is $3.50; one 
+      apple is $0.99 and one pound of fish is $5.99 - and show the amount owed
+      in the third field. All of this should be done when the appropriate 
+      button is pressed. The amount must be shown with 2 decimal places and prefixed with
+      a $ (dollar) sign.     
+    </p>
+    <form action="javascript:void(0);" method="POST" onsubmit="calculateAmount()">
+      <p>
+        <input type="text" name="product" size="20" placeholder="Enter product..."/>
+    
+        <input type="text" name="quantity" size="20" placeholder="Enter quantity.."/>
+      </p>
+      <p>
+        <input type="text" name="AmtDue" size="20" placeholder="show amount due" readonly/>
+      </p>
+      <p>
+        <input class="but" type="submit" name="submit" value="What Do I Owe"/>
+    
+        <input class="but" type="reset" name="reset" value="Clear All"/>  
+      </p>
+    </form>
+
+
+	<p>1: My first question in Copilot was just copying and pasting all the code I had. I gave me back a completed string of code but I dont need all the code just the parts I dont already have.</p>
+ <p> 2: My first attempt didnt work so i coppied the code and put it back into Copilot and asked why it isnt working</p>
+ <p> 3: same problem the code isnt working. The total cost just wont appear.</p>
+ <P> 4: Now I got it to work, I deleted all my code and readded all of there code rather than just the script</P>
+ <p>5: overall I thought this was more annoying then writing the code. Any problem I ran into made it hard because I didnt know what was going on and what to fix.</p>
+</body>
+</html>
