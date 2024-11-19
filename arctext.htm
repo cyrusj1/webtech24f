@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARC Text</title>
+    <style>
+        div {text-align: center; padding-top: 100px; font-size: x-large; font-family: fantasy;}
+h1#a {font-family: Arial, Helvetica, sans-serif; font-size: x-large; padding: 20px; text-align: center;}
+ h2#b { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: navy; margin-top: 200px; text-align: center;}
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.arctext.js"></script>
+  
+  
+ <script type="text/javascript">
+$(function() {
+        $("h1#a").click (function() {
+            $(this).arctext({radius:200, dir:1});
+            $("h2#b").arctext({radius:400, dir:-1});
+
+        })
+})
+
+    </script>
+
+</head>
+<body>
+    <h1 id="a"> Please Work I hope this works</h1>
+    <h2 id="b"> This would be really cool if it works</h2>
+
+
+    <div class="animate-typing" data-type-speed="200" data-type-delay="200" data-remove-speed="50" data-remove-delay="500">
+
+    I am going to look like I am typing this but I am not
+
+</div class="c">
+<script type="text/javascript" src="jquery.animateTyping.js"></script>
+</body>
+</html>
