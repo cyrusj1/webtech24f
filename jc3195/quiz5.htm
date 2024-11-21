@@ -48,13 +48,13 @@
             n2 = myf.quantity.value;
             
             if ((n1 == "XXX") && (n2 == "XXX")) {
-                alert("Please enter a value in both fields");
+                alert("Please enter something in both fields");
             }
             else if ((n1 == "XXX") && (n2 != "XXX")) {
-                alert("Select a Product");
+                alert("Select a product");
             }
             else if ((n1 != "XXX") && (n2 == "XXX")) {
-                alert("Select a Quantity");
+                alert("Select a qqantity");
             }
             else if (n1 == "Shirt") {
                      myinp = prompt("What are you willing to pay for the shirt: (Between $12.99 and $24.99)");
@@ -62,7 +62,7 @@
                     myf.total.value = "$ " + (parseFloat(myinp) * n2).toFixed(2);
                       }
                       else {
-                      alert("Please enter a numerical price between $12.99 and $24.99")
+                      alert("Please enter a price between $12.99 and $24.99")
                       }
             }
             else if (n1 == "Pant") {
@@ -71,7 +71,7 @@
                          myf.total.value = "$ " + (parseFloat(myinp) * n2).toFixed(2);
                         }
                          else {
-                alert("Please enter a numerical price between $12.99 and $24.99")
+                alert("Please enter a price between $12.99 and $24.99")
              }
             }
         }
