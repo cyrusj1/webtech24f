@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+	 <title>Graded Homework #3</title>
+     <style type="text/css">
+        h1 {text-align:center; font-family:Arial; color: Navy;}
+		table {float:left; width:30%; margin-right:100px;}
+		table, td {border:1px solid black;}
+		table img {width:100%;}
+		img#big {width:50%;}
+		h3 { margin-left:50%;}
+		p {font-family:sans-serif; color:navy; margin-right:50px; margin-left:50px; font-size:large;}
+     </style>
+        <script type="text/javascript">
+
+function showPic(gsny)
+            {
+                
+                userinp = prompt("Please type a caption for your image");
+				myimg1 = document.getElementById("img1")
+				myimg2 = document.getElementById("img2")
+				myimg3 = document.getElementById("img3")
+                myimg4 = document.getElementById("img3")
+                myimgbig = document.getElementById("big")
+
+				if (gsny == "img1") {
+			myimgbig.src = "alaskaglacier1R.jpg";
+            document.getElementById('cap').innerText = userinp;
+			}
+
+			else if(gsny == "img2") {
+			myimgbig.src = "alaskaglacier2R.jpg";
+            document.getElementById('cap').innerText = userinp;
+			}
+            else if(gsny == "img3") {
+			myimgbig.src = "alaskaicewallR.jpg";
+            document.getElementById('cap').innerText = userinp;
+			}
+			else {
+				myimgbig.src = "AlaskaLakeR (1).jpg";
+                document.getElementById('cap').innerText = userinp;
+				}
+			}
+           
+        </script>
+        
+    </head>
+
+    <body>
+	    <!-- Your HTML goes here -->
+        <h1> Picture Gallery with JavaScript </h1>
+ <p> The page below holds a table that has 2 rows and 2 columns,
+ each cell holding an image. Think of this as your thumb-nail view.
+ The table has been floated left. There is another image to the
+ right of the table, that is currently empty and hence you cannot
+ see it. It has an ID of "big" and we will refer to this as the big
+ image. Below the big image is a caption, also empty, and invisible.
+ Write the functionality in Javascript whereby, if you click on a 
+ thumb-nail image, that image is shown as a big image, much like how
+ a picture gallery will work. <em>Prompt the user for a caption each time and
+ show the caption below the image using the placeholder provided.</em>
+
+ Optional Challenge: Solve the same problem with jquery. You would know how to do
+ this if you solved exercise 6 from CS23 </p>
+ 
+ 
+ <table>
+ 	<tr>
+     <td> <img src="alaskaglacier1R.jpg" alt="Alaska 1" title="A1" onclick="showPic(this.id)" id="img1"/> </td>
+     <td> <img src="alaskaglacier2R.jpg" alt="Alaska 2" title="A2" onclick="showPic(this.id)"id="img2"/> </td>
+    </tr>
+    <tr>
+     <td> <img src="alaskaicewallR.jpg" alt="Alaska 3" title="A3" onclick="showPic(this.id)" id="img3" /> </td>
+     <td> <img src="AlaskaLakeR (1).jpg" alt="Alaska 4" title="A4" onclick="showPic(this.id)"id="img4" /> </td>
+    </tr>
+   </table>
+   
+   <img id="big" src="" alt="" title="" /> <!-- This is the larger image -->
+   <h3 id="cap"></h3> <!-- This is the image caption -->
+
+   
+   
+
+        
+    </body>
+</html>
