@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="description" content="Bluefin tuna fishing laws for recational"/>
+    <meta name="keywords" content="fishing laws, recrational bluefin tuna, recreational regulations, recreational fishing" />
+    <meta name="author" content="Cyrus Jewett" />
+	<title>Recreational Regulations</title>
+
+	<style>
+	/* Your styles go here */
+	
+	
+	h1#heading {position: absolute;}
+            
+                h1 {text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: navy;}
+                
+
+                ul{font-size: larger;}
+    ul.cb {
+            list-style-type: none; 
+            padding-left: 40px;
+        }
+
+       
+        .cb1 {
+            background-image: url(BFTBP.jpg);
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+            background-size: 75px; 
+            padding-left: 100px; 
+        }
+        .cb2 {
+            background-image: url(BFTBP.jpg);
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+            background-size: 75px; 
+            padding-left: 100px; 
+        }
+        .cb3 {
+            background-image: url(BFTBP.jpg);
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+            background-size: 75px; 
+            padding-left: 100px; 
+        }
+                
+	</style>
+
+<script type="text/javascript">
+    function changeTitle()
+    {
+        document.getElementById("title").style.color = "red";
+        document.getElementById("title").style.fontFamily = "Arial"
+    }
+
+    var vert = 570;
+        var horz = 100;	
+
+        function pleaseMove() {
+            var moveMe = document.getElementById("heading");
+			moveMe.style.left = horz + "px";
+				moveMe.style.bottom = vert + "px";
+				horz = horz + 3;
+        	 if (horz > 950) {
+					vert = 570
+					horz = -200
+			 }
+             
+		
+        
+      
+            setTimeout("pleaseMove()", 10);
+        }
+
+    </script>
+	
+	<link rel="stylesheet" href="recreational.css" type="text/css">
+	
+	
+	
+  </head>
+
+  <body onload="pleaseMove()">
+	<!-- Your HTML goes here -->
+	<div id="banner">
+        <h1 id="heading"> Giant Bluefin Tuna</h1>
+    </div>
+	
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="Migration.htm">Migration</a>
+        <a href="BodyParts.htm">Body Parts</a>
+
+        <div class="dropdown">
+          <button class="dropdownbutton">Fishing Styles</button>
+             <div class="dropdowncontent">
+                <a href="RodReal.htm">Rod and Reel</a>
+                <a href="Harpoon.htm">Harpoon</a>
+             </div>
+                </div>
+
+             <div class="dropdown">
+                <button class="dropdownbutton">Regulations</button>
+                   <div class="dropdowncontent">
+                      <a href="Commercial.htm">Commercial and Headboat</a>
+                      <a href="Recreational.htm">Recreational</a>
+                      
+      
+                   </div>
+                   </div>
+               
+               
+                   <div class="dropdown">
+                    <button class="dropdownbutton">About Me</button>
+                       <div class="dropdowncontent">
+                          <a href="aboutme.htm">About Me</a>
+                          <a href="contact.htm">Contact</a>
+                          <a href="credits.htm">Credits</a>
+                          <a href="sitemap.htm">Sitemap</a>
+                          
+          
+                       </div>
+                       </div>
+               
+               
+                   
+                   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+
+<div class="bg1">
+    <div class="vert">
+
+    
+
+<h1 id="title" onclick="changeTitle()"> Laws and regulations for recreational fisherman</h1>
+		
+<ul class="cb">
+    <li class="cb1">Size Limits For Massachusetts</li>
+        <ol>
+            <li> Recreational can keep a tuna over 23Inches</li>
+            <li> Yet the Tuna has to be less that 37 Inches</li>
+        </ol>
+
+
+    <li class="cb2"> How many can you keep</li>
+    <ol>
+        <li> Recreational fisherman can keep 1 per boat per day and they have to reported at end of day</li>
+    </ol>
+    <li class="cb3">When can I fish for them</li>
+    <ol>
+        <li> There is no set season In MA for tuna allowing you to fish anytime of year. But they arent always catchable at all times of the year.</li>
+    </ol>
+</ul>
+
+</div>
+</div>	
+
+  </body>
+</html>
