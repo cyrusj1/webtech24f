@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <meta name="description" content="Why are tuna aerodynamic and expensive"/>
+    <meta name="keywords" content="tuna tail, tuna meat, areodynamics, tuna eyes" />
+    <meta name="author" content="Cyrus Jewett" />
+	<title>Body Parts</title>
+
+	<style>
+	/* Your styles go here */
+	img#BFT {display: block; margin: auto;}
+	
+
+                img#p1 {display: block; margin: auto;}
+                img#p2 {display: block; margin: auto;}
+                img#p3 {display: block; margin: auto;}
+                img#p4 {display: block; margin: auto;}
+                img#p5 {display: block; margin: auto;}
+                img#p6 {display: block; margin: auto;}
+                h1 {text-align: center; color: navy; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+                p {text-align: center; padding-left: 20%; padding-right: 20%;}
+                h1#heading {position: absolute;}
+
+	
+	</style>
+
+<script type="text/javascript">
+
+    function changeTitle()
+    {
+        document.getElementById("title").style.color = "red";
+        document.getElementById("title").style.fontFamily = "Arial"
+    }
+
+    var vert = 570;
+        var horz = 100;	
+
+        function pleaseMove() {
+            var moveMe = document.getElementById("heading");
+			moveMe.style.left = horz + "px";
+				moveMe.style.bottom = vert + "px";
+				horz = horz + 3;
+        	 if (horz > 950) {
+					vert = 570
+					horz = -200
+			 }
+             
+		
+        
+      
+            setTimeout("pleaseMove()", 10);
+        }
+
+        function makeBig(x) {
+                var myimg;
+                myimg = document.getElementById(x);
+                myimg.width = myimg.width * 1.3;
+                myimg.style.boxShadow = "10px 10px 10px 10px blue"
+            }
+
+            function makeSmall(x) {
+                var myimg;
+                myimg = document.getElementById(x);
+                myimg.width = myimg.width / 1.3;
+                myimg.style.boxShadow = "none"
+            }
+
+    </script>
+	
+	<link rel="stylesheet" href="bodyparts.css" type="text/css">
+	
+	
+	
+  </head>
+
+  <body onload="pleaseMove()">
+
+    <div id="banner">
+        <h1 id="heading"> Giant Bluefin Tuna</h1>
+    </div>
+	
+    <div class="topnav" id="mytopnav">
+        <a href="index.htm" class="active">Home</a>
+        <a href="Migration.htm">Migration</a>
+        <a href="BodyParts.htm">Body Parts</a>
+
+        <div class="dropdown">
+          <button class="dropdownbutton">Fishing Styles</button>
+             <div class="dropdowncontent">
+                <a href="RodReal.htm">Rod and Reel</a>
+                <a href="Harpoon.htm">Harpoon</a>
+             </div>
+                </div>
+
+             <div class="dropdown">
+                <button class="dropdownbutton">Regulations</button>
+                   <div class="dropdowncontent">
+                      <a href="Commercial.htm">Commercial and Headboat</a>
+                      <a href="Recreational.htm">Recreational</a>
+                      
+      
+                   </div>
+                   </div>
+                   <div class="dropdown">
+                    <button class="dropdownbutton">About Me</button>
+                       <div class="dropdowncontent">
+                          <a href="aboutme.htm">About Me</a>
+                          <a href="contact.htm">Contact</a>
+                          <a href="credits.htm">Credits</a>
+                          <a href="sitemap.htm">Sitemap</a>
+                          
+          
+                       </div>
+                       </div>
+                   
+                   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+</div>
+<div class="bg1"> 
+    <div class="vert">
+<div id=T1>
+	<h1 id="title" onclick="changeTitle()">Select on Body Part to Get Information!</h1>
+</div>
+    <map name="BFT" id="BFT">
+        <area shape="rect" coords="0, 62, 159, 240" href="#head" alt="Head"/>
+        <area shape="rect" coords="185, 191, 495, 306" href="#belly" alt="Belly"/>
+        <area shape="rect" coords="585, 2, 799, 290" href="#tail" alt="tail"/>
+        <area shape="rect" coords="151, 63, 373, 108" href="#back" alt="Back"/>
+        <area shape="rect" coords="178, 0, 473, 64" href="#backfins" alt="Fin"/>
+        <area shape="rect" coords="173, 102, 347, 172" href="#pecfins" alt="pec Fin"/>
+    </map>
+	<p>
+    <img src="bluefinmap.jpg" alt="BlueFin Tuna Map" title="Bluefin Tuna" usemap="#BFT" id="BFT"/>
+    </p>
+    
+
+
+    <h1 id="head"> Head</h1>
+    <p> The head of a bluefin tuna is streamlined, which helps reduce drag as they swim at high speeds. Bluefin tuna have large, well-developed eyes that provide excellent vision in low light conditions, helping them spot prey in deep waters and making the fishing line have to be extremely clear.</p>
+   <img onmouseover="makeBig(this.id)" onmouseout="makeSmall(this.id)" src="tunahead.jpg" title="Tuna Head" alt="tunahead" id="p1">
+    <h1 id="tail"> Tail</h1>
+    <p>The tail, of bluefin tuna is large and muscular, providing the thrust necessary for their incredible speed and agility in the water. Bluefin tuna have a high aspect ratio in their tails, meaning they are long and narrow. This design reduces drag and improves efficiency during swimming. The tail’s design helps them conserve energy while swimming, allowing them to cover vast distances during their migrations.
+    </p>
+    <img onmouseover="makeBig(this.id)" onmouseout="makeSmall(this.id)" src="tunatail.jpg" title="Tuna tail" alt="tunatail" id="p2">
+    <h1 id="back"> Back</h1>
+    <p>
+        The back meat, particularly from the loin area, is known for its rich, buttery flavor, making it a sought-after delicacy in the cooking world. The back meat is often used in high-quality sushi and sashimi dishes. The tender texture and flavor make it a favorite among sushi chefs. In addition to sushi, back meat can be used in a variety of dishes, including grilled steaks, poke bowls, and pasta.
+    </p>
+    <img onmouseover="makeBig(this.id)" onmouseout="makeSmall(this.id)" src="tunabackloin.jpg" title="Tuna back loin" alt="tuna back loin" id="p3">
+    <h1 id="belly"> Belly</h1>
+    <p>
+        The belly meat, especially known as "otoro," is considered the most luxurious and sought-after part of the bluefin tuna, prized for its rich flavor and high fat content. Otoro is marbled with intramuscular fat, giving it a buttery texture and melt-in-your-mouth quality. This fat contributes to its distinctive, rich taste. Due to its premium status, otoro often fetches high prices at fish markets and sushi restaurants, sometimes reaching hundreds of dollars per pound. In Japan, otoro is often featured in high-end kaiseki dining and special occasions, symbolizing luxury and culinary excellence.
+    </p>
+    <img onmouseover="makeBig(this.id)" onmouseout="makeSmall(this.id)" src="tunatoro.jpg" title="Tuna toro loin" alt="tuna toro loin" id="p4">
+    <h1 id="backfins"> Back Fins</h1>
+    <p>
+        Bluefin tuna have two dorsal fins: the first is larger and more prominent, while the second is smaller and positioned further back. This structure helps with stability and maneuverability while swimming. The dorsal fins are typically dark blue or black on top, which helps camouflage the fish when viewed from above, aiding in stealth while hunting. While not commonly used in cuisine, the dorsal fin and other parts of bluefin tuna can be processed for various uses, including fish fin soup in some cultures.
+    </p>
+    <img onmouseover="makeBig(this.id)" onmouseout="makeSmall(this.id)" src="backfins.jpg" title="Tuna back fins" alt="tuna back fins" id="p5">
+    <h1 id="pecfins"> Pectoral Fin</h1>
+    <p>
+        The pectoral fins are located on the sides of the fish, just behind the gills. They are broad and pointed, providing stability and control during swimming. While the tail fin provides the primary thrust for propulsion, the pectoral fins assist in maintaining balance and orientation in the water.
+    </p>
+    <img onmouseover="makeBig(this.id)" onmouseout="makeSmall(this.id)" src="pecfin.jpg" title="Tuna pec fins" alt="tuna pec fins" id="p6">
+
+	
+		
+</div>
+</div>
+  </body>
+</html>
